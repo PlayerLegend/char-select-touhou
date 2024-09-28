@@ -1,4 +1,4 @@
-![alt text](characters.png)
+![Characters](characters.png)
 
 # Touhou 64 - Character Select
 
@@ -9,6 +9,11 @@ A model pack for [SM64CoopDX](https://github.com/coop-deluxe/sm64coopdx) and the
 - Mima
 - Sanae Kochiya
 - Momiji Inubashiri
+- Chen
+- Reimu Hakurei
+- Marisa Kirisame
+
+![Roster](roster.png)
 
 ## Installation
 
