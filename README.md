@@ -12,8 +12,13 @@ A model pack for [SM64CoopDX](https://github.com/coop-deluxe/sm64coopdx) and the
 - Chen
 - Reimu Hakurei
 - Marisa Kirisame
-
-![Roster](roster.png)
+- Reisen (Bougetsushou)
+- Doremy Sweet
+- Alice Margatroid
+- Yuuka Kazami
+- Yumemi Okazaki
+- Yuuma Toutetsu
+- Joon Yorigami
 
 ## Installation
 
@@ -32,7 +37,10 @@ Copy the mod directory into the `mods` folder of the game. You will need to have
 
 - [Player Legend](https://github.com/PlayerLegend) - Models
 - Tough Guy Blues - Mima icon, testing
+- Lilpaulo3232 - New voices, from *Touhou Sky Arena -MATSURI- Climax*
+- Qwealm - Original base for new voices
 
 ## License
 
-Touhou 64 Character Select © 2024 is licensed under CC BY-SA 4.0 
+Models and code from Touhou 64 Character Select © 2025 are licensed under CC BY-SA 4.0
+Sounds belong to the developers of *Touhou Sky Arena -MATSURI- Climax*

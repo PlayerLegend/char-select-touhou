@@ -63,7 +63,7 @@ extern u8 marisa_dead_ci4[];
 extern u8 marisa_dead_pal_rgba16[];
 extern u8 marisa_wing1_ia8[];
 extern u8 marisa_wing_2_ia8[];
-extern Vtx marisa_Butt_mesh_layer_1_vtx_0[174];
+extern Vtx marisa_Butt_mesh_layer_1_vtx_0[170];
 extern Gfx marisa_Butt_mesh_layer_1_tri_0[];
 extern Vtx marisa_Butt_mesh_layer_1_vtx_1[52];
 extern Gfx marisa_Butt_mesh_layer_1_tri_1[];

@@ -67,7 +67,7 @@ extern u8 chen_dead_ci4[];
 extern u8 chen_dead_pal_rgba16[];
 extern u8 chen_wing_2_ia8[];
 extern u8 chen_wing1_ia8[];
-extern Vtx chen_Butt_mesh_layer_1_vtx_0[234];
+extern Vtx chen_Butt_mesh_layer_1_vtx_0[228];
 extern Gfx chen_Butt_mesh_layer_1_tri_0[];
 extern Vtx chen_Butt_mesh_layer_4_vtx_0[20];
 extern Gfx chen_Butt_mesh_layer_4_tri_0[];
