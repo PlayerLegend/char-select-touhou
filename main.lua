@@ -83,7 +83,7 @@ local CT_ALICE = _G.charSelect.character_add("Alice",
 					    get_texture_info("alice-icon"));
 
 local CT_YUUKA = _G.charSelect.character_add("Yuuka",
-					    "Green lady",
+					    "pls rember that wen u feel scare or frigten never forget ttimes wen u feeled happy. wen day is dark alway rember happy day",
 					    "player_legend",
 					    {r = 200, g = 50, b = 50},
 					    smlua_model_util_get_id("yuuka_s_geo"),
@@ -114,6 +114,13 @@ local CT_JOON = _G.charSelect.character_add("Joon",
 					    CT_MARIO,
 					    get_texture_info("joon-icon"));
 
+local CT_VIVIT = _G.charSelect.character_add("VIVIT",
+					    "Inside I know, I'm not a void, I'm automaton!",
+					    "player_legend",
+					    {r = 200, g = 50, b = 50},
+					    smlua_model_util_get_id("vivit_s_geo"),
+					    CT_MARIO,
+					    get_texture_info("vivit-icon"));
 function add_costume(ct, name, geo)
    
    _G.charSelect.character_add_costume(ct,
@@ -143,6 +150,7 @@ add_costume(CT_YUUKA, "Yuuka*", "yuuka_geo")
 add_costume(CT_YUMEMI, "Yumemi*", "yumemi_geo")
 add_costume(CT_YUUMA, "Yuuma*", "yuuma_geo")
 add_costume(CT_JOON, "Joon*", "joon_geo")
+add_costume(CT_VIVIT, "VIVIT*", "vivit_geo")
 
 -- Add Voices
 local VOICETABLE_MARISA = {
@@ -226,6 +234,32 @@ local VOICETABLE_SANAE = {
    [CHAR_SOUND_YAH_WAH_HOO] = 'sanae_action1.ogg',
 }
 
+local VOICETABLE_ALICE = {
+   [CHAR_SOUND_ATTACKED] = {'alice_damage1.ogg','alice_damage2.ogg'},
+   [CHAR_SOUND_DOH] = 'bump1.ogg',
+   [CHAR_SOUND_DYING] = 'alice_die.ogg',
+   [CHAR_SOUND_GROUND_POUND_WAH] = {'alice_groundpound.ogg'},
+   [CHAR_SOUND_HAHA] = 'alice_haha.ogg',
+   [CHAR_SOUND_HERE_WE_GO] = {'alice_herewego.ogg'},
+   [CHAR_SOUND_HOOHOO] = 'alice_action2.ogg',
+   [CHAR_SOUND_LETS_A_GO] = 'alice_letsago.ogg',
+   [CHAR_SOUND_IMA_TIRED] = 'alice_imatired.ogg',
+   [CHAR_SOUND_MAMA_MIA] = 'alice_mamamia.ogg',
+   [CHAR_SOUND_ON_FIRE] = 'alice_burn.ogg',
+   [CHAR_SOUND_OOOF2] = 'alice_damage2.ogg',
+   [CHAR_SOUND_OOOF] = 'alice_damage1.ogg',
+   [CHAR_SOUND_PANTING] = 'alice_pant.ogg',
+   [CHAR_SOUND_PUNCH_HOO] = 'alice_action3.ogg',
+   [CHAR_SOUND_PUNCH_WAH] = 'alice_action2.ogg',
+   [CHAR_SOUND_PUNCH_YAH] = 'alice_action1.ogg',
+   [CHAR_SOUND_SO_LONGA_BOWSER] = 'alice_solongbowser.ogg',
+   [CHAR_SOUND_UH2] = 'alice_damage1.ogg',
+   [CHAR_SOUND_WAAAOOOW] = 'alice_scream.ogg',
+   [CHAR_SOUND_WHOA] = {'alice_woah.ogg'},
+   [CHAR_SOUND_YAHOO] = {'alice_yahoo.ogg'},
+   [CHAR_SOUND_YAHOO_WAHA_YIPPEE] = 'alice_yahoo.ogg',
+   [CHAR_SOUND_YAH_WAH_HOO] = 'alice_action1.ogg',
+}
 function add_voice(model, voicetable)
    _G.charSelect.character_add_voice(smlua_model_util_get_id(model), voicetable)
 end
@@ -237,10 +271,9 @@ VOICETABLE_REISEN2 = VOICETABLE_MARISA
 VOICETABLE_DOREMY = VOICETABLE_SANAE
 VOICETABLE_YUUKA = VOICETABLE_SANAE
 VOICETABLE_YUUMA = VOICETABLE_MARISA
-VOICETABLE_YUUMA = VOICETABLE_MARISA
-VOICETABLE_ALICE = VOICETABLE_SANAE
 VOICETABLE_YUMEMI = VOICETABLE_SANAE
 VOICETABLE_JOON = VOICETABLE_MARISA
+VOICETABLE_VIVIT = VOICETABLE_REIMU
 
 add_voice("chen_s_geo", VOICETABLE_CHEN)
 add_voice("marisa_s_geo", VOICETABLE_MARISA)
@@ -255,6 +288,7 @@ add_voice("yuuma_s_geo", VOICETABLE_YUUMA)
 add_voice("alice_s_geo", VOICETABLE_ALICE)
 add_voice("yumemi_s_geo", VOICETABLE_YUMEMI)
 add_voice("joon_s_geo", VOICETABLE_JOON)
+add_voice("vivit_s_geo", VOICETABLE_VIVIT)
 
 add_voice("chen_geo", VOICETABLE_CHEN)
 add_voice("marisa_geo", VOICETABLE_MARISA)
@@ -268,6 +302,7 @@ add_voice("yuuma_geo", VOICETABLE_YUUMA)
 add_voice("alice_geo", VOICETABLE_ALICE)
 add_voice("yumemi_geo", VOICETABLE_YUMEMI)
 add_voice("joon_geo", VOICETABLE_JOON)
+add_voice("vivit_geo", VOICETABLE_VIVIT)
 
 add_voice("mima_recolor_geo", VOICETABLE_MIMA)
 add_voice("mima_podd_alt_geo", VOICETABLE_MIMA)
@@ -275,7 +310,7 @@ add_voice("mima_podd_alt_geo", VOICETABLE_MIMA)
 local character_get_voice, update_sound, update_snore = _G.charSelect.character_get_voice, _G.charSelect.voice.sound, _G.charSelect.voice.snore
 local function character_sounds(m, sound)
     local v = _G.charSelect.character_get_voice(m)
-    if v == VOICETABLE_MARISA or v == VOICETABLE_REIMU or v == VOICETABLE_SANAE
+    if v == VOICETABLE_MARISA or v == VOICETABLE_REIMU or v == VOICETABLE_SANAE or v == VOICETABLE_ALICE
     then
         return update_sound(m, sound)
     end

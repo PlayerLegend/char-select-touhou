@@ -19,6 +19,7 @@ A model pack for [SM64CoopDX](https://github.com/coop-deluxe/sm64coopdx) and the
 - Yumemi Okazaki
 - Yuuma Toutetsu
 - Joon Yorigami
+- VIVIT
 
 ## Installation
 

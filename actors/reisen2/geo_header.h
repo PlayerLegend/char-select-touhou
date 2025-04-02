@@ -137,6 +137,8 @@ extern Vtx reisen2_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_vtx_1[8]
 extern Gfx reisen2_Right_Hand_Wing_Cap_Swtich_Option_Wings_mesh_layer_4_tri_1[];
 extern Vtx reisen2_Left_Thigh_Color_mesh_layer_1_vtx_0[14];
 extern Gfx reisen2_Left_Thigh_Color_mesh_layer_1_tri_0[];
+extern Vtx reisen2_Left_Thigh_Color_mesh_layer_1_vtx_1[9];
+extern Gfx reisen2_Left_Thigh_Color_mesh_layer_1_tri_1[];
 extern Vtx reisen2_Left_Leg_mesh_layer_1_vtx_0[19];
 extern Gfx reisen2_Left_Leg_mesh_layer_1_tri_0[];
 extern Vtx reisen2_Left_Leg_mesh_layer_1_vtx_1[14];
@@ -145,6 +147,8 @@ extern Vtx reisen2_Left_Shoe_mesh_layer_1_vtx_0[40];
 extern Gfx reisen2_Left_Shoe_mesh_layer_1_tri_0[];
 extern Vtx reisen2_Right_Thigh_Color_mesh_layer_1_vtx_0[14];
 extern Gfx reisen2_Right_Thigh_Color_mesh_layer_1_tri_0[];
+extern Vtx reisen2_Right_Thigh_Color_mesh_layer_1_vtx_1[9];
+extern Gfx reisen2_Right_Thigh_Color_mesh_layer_1_tri_1[];
 extern Vtx reisen2_Right_Leg_mesh_layer_1_vtx_0[19];
 extern Gfx reisen2_Right_Leg_mesh_layer_1_tri_0[];
 extern Vtx reisen2_Right_Leg_mesh_layer_1_vtx_1[14];
